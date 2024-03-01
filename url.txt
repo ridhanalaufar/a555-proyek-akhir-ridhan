@@ -2,7 +2,7 @@ streamlit.app
 https://a555-ridhan-proyek-akhir.streamlit.app/
 
 link backup google drive
-https://drive.google.com/file/d/1XZMl1h69RpYxC6OIXbiuRuNW9_xBbRaz/view?usp=drive_link
+https://drive.google.com/file/d/1QjJjAZDScakHcgJ9G7gxPOwzLBjqabjf/view?usp=sharing
 
 link backup repository github
 https://github.com/ridhanalaufar/a555-proyek-akhir-ridhan
