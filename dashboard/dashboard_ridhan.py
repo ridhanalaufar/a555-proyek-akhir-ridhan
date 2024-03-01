@@ -179,7 +179,7 @@ def main():
     st.title('Bike Sharing Users')
 
     # Load data
-    file_path = 'day.csv'
+    file_path = 'dashboard/day.csv'
     data = load_data(file_path)
 
     data_2011 = data[data['yr'] == 0]
