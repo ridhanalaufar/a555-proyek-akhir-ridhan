@@ -107,10 +107,8 @@ def plot_season_comparison_barplot(data_2011, data_2012):
     r1 = np.arange(len(seasons))
     r2 = [x + bar_width for x in r1]
 
-    # Create figure and axes
-    fig, ax = plt.subplots(figsize=(12, 8))
 
-    # Plot barplots for each year
+    fig, ax = plt.subplots(figsize=(12, 8))
     ax.bar(r1, seasonal_total_users_2011, color='skyblue', width=bar_width, label='2011', alpha=0.7)
     ax.bar(r2, seasonal_total_users_2012, color='salmon', width=bar_width, label='2012', alpha=0.7)
 
@@ -179,7 +177,7 @@ def main():
     st.title('Bike Sharing Users')
 
     # Load data
-    file_path = 'dashboard/day.csv'
+    file_path = '../dashboard/day.csv'
     data = load_data(file_path)
 
     data_2011 = data[data['yr'] == 0]
@@ -200,7 +198,6 @@ def main():
         # st.subheader('Nama: Ridhan Al Aufar')
         # st.subheader('Email: ridhan783@gmail.com')
         # st.subheader('ID Dicoding: ridhann_4')
-        st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png")
     
         # Mengambil start_date & end_date dari date_input
         start_date, end_date = st.date_input(
@@ -225,8 +222,6 @@ def main():
         total_users = data['cnt'].sum()
         formatted_total_users = '{:,.0f}'.format(total_users)
         st.metric("Total Users", value=formatted_total_users)
-
-
 
     st.subheader('Distribution of Bike Sharing Users by Month')
     barplot_monthly_bicycle_usage(main_df)
