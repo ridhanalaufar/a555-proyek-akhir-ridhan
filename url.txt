@@ -1,2 +1,5 @@
+streamlit.app
+https://a555-ridhan-proyek-akhir.streamlit.app/
+
 link backup repository github
 https://github.com/ridhanalaufar/a555-proyek-akhir-ridhan
